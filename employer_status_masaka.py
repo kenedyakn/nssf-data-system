@@ -14,7 +14,7 @@ employers_table = 'employers'
 conn = mysql.connector.connect(user=database_username, password=database_password, host=database_ip,
                                database=database_name)
 
-wbook = xlrd.open_workbook('employer_status_masaka.xlsx')
+wbook = xlrd.open_workbook('excel_data/employer_status_masaka.xlsx')
 
 
 # print("Number of sheets: {0}".format(workbook.nsheets))
