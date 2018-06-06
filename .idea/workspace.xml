@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff039c9-784b-4c0e-973e-148fdafca6e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/using_pandas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.ecollection_report.xlsx#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.~lock.employer_status_masaka.xlsx#" beforeDir="false" afterPath="$PROJECT_DIR$/.~lock.employer_status_masaka.xlsx#" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employer_status_masaka.py" beforeDir="false" afterPath="$PROJECT_DIR$/employer_status_masaka.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employer_status_masaka.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/employer_status_masaka.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.~lock.employer_status_masaka.xlsx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecollection_report.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employer_status_masaka.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/employer_status_masaka.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,53 +17,13 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nssf$excel_reader.coverage" NAME="excel_reader Coverage Results" MODIFIED="1528186898844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nssf$employer_status_masaka.coverage" NAME="employer_status_masaka Coverage Results" MODIFIED="1528254493132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nssf$employer_status_masaka.coverage" NAME="employer_status_masaka Coverage Results" MODIFIED="1528255551602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="nssf" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="excel_reader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excel_reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employer_status_masaka.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/employer_status_masaka.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="using_pandas.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/using_pandas.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/core/generic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29385">
-              <caret line="2015" column="60" selection-start-line="2015" selection-start-column="56" selection-end-line="2015" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,9 +53,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="83" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="138" />
+    <option name="y" value="253" />
     <option name="width" value="1493" />
     <option name="height" value="711" />
   </component>
@@ -106,6 +65,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,7 +82,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,6 +91,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -221,30 +183,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="271" y="392" width="1493" height="863" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1600" height="873" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32971507" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012837" side_tool="true" weight="0.32971507" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32869565" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4987163" weight="0.32971507" />
       <window_info anchor="bottom" id="Python Console" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3287483" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3826323" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.13507925" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.38260868" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49635038" visible="true" weight="0.12708601" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.25644505" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.5020492" side_tool="true" visible="true" weight="0.13507925" />
-      <window_info anchor="bottom" id="Favorites" order="2" side_tool="true" weight="0.12347354" />
+      <window_info id="Structure" order="1" sideWeight="0.50364965" side_tool="true" visible="true" weight="0.12708601" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Favorites" order="2" side_tool="true" weight="0.12347354" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +215,37 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/excel_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/using_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29385">
+          <caret line="2015" column="60" selection-start-line="2015" selection-start-column="56" selection-end-line="2015" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employer_status_masaka.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/excel_reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -278,13 +270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excel_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/core/generic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29385">
@@ -292,20 +277,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/using_pandas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employer_status_masaka.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+        <state relative-caret-position="194">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excel_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="23" selection-start-line="23" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/using_pandas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
