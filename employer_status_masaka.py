@@ -4,12 +4,14 @@ import pandas as pd
 import sqlalchemy
 import re
 import math
+import datetime
 
 database_username = 'phpmyadmin'
 database_password = '123!@#QWEasd'
 database_ip = 'localhost'
 database_name = 'nssf_db'
 employers_table = 'employers'
+payments_table = 'payments'
 
 conn = mysql.connector.connect(user=database_username, password=database_password, host=database_ip,
                                database=database_name)
@@ -58,6 +60,65 @@ def is_available(param):
     return is_available
 
 
+def is_payment_captured(emp_num, month):
+    date = 'NULL'
+    wrongValue = month
+    try:
+        workbook_datemode = wbook.datemode
+        y, m, d, hh, mm, ss = xlrd.xldate_as_tuple(wrongValue, workbook_datemode)
+        date = "{0}-{1}-{2}".format(y, m, d)
+    except TypeError as err:
+        print("No date specified")
+
+        cursor = conn.cursor()
+        is_available = False
+        query = 'select employer_number from ' + payments_table + ' ' \
+                                                                  'where employer_number = \'' + emp_num + '\' and ' \
+                                                                                                           'date = \'' + date + '\' limit 1'
+        cursor = conn.cursor()
+        cursor.execute(query)
+        rows = cursor.fetchall()
+        cursor.close()
+        count = len(rows)
+        if count > 0:
+            is_available = True
+        return is_available
+
+
+# Add payment record function
+def add_payment_record(record):
+    wrongValue = record[3]
+    date = ''
+    try:
+        workbook_datemode = wbook.datemode
+        y, m, d, hh, mm, ss = xlrd.xldate_as_tuple(wrongValue, workbook_datemode)
+        date = "{0}-{1}-{2}".format(y, m, d)
+    except TypeError as err:
+        print("No date specified")
+    cursor = conn.cursor()
+    full_query = ''
+    try:
+        if date != '':
+            query = 'insert into ' + payments_table + ' (employer_number, amount, date) values'
+            values = '(\'' + str(record[0]).strip() + '\',\'' + re.escape(
+                str(record[4]).strip()) + '\',\'' + date + '\')'
+        else:
+            query = 'insert into ' + payments_table + ' (employer_number, amount) values'
+            values = '(\'' + str(record[0]).strip() + '\',\'' + re.escape(
+                str(record[4]).strip()) + '\')'
+        full_query = query + values
+
+        if is_payment_captured(record[0], record[3]):
+            print("Payment for {0} : month {1} captured".format(record[0], record[3]))
+        else:
+            cursor.execute(full_query)
+        conn.commit()
+    except mysql.connector.Error as err:
+        print("Something went wrong: {}".format(err))
+        conn.rollback()
+    pass
+
+
 def add_to_db(sheet, rows, cols):
     cursor = conn.cursor()
     total_rows = rows
@@ -70,7 +131,7 @@ def add_to_db(sheet, rows, cols):
         full_query = ''
         for x in range(1, total_rows):
             for y in range(7):
-                record.append(str(sheet.cell(x, y).value))
+                record.append(sheet.cell(x, y).value)
             values = '(\'' + str(record[0]).strip() + '\',\'' + re.escape(str(record[1]).strip()) + '\',\'' + str(
                 record[2]).strip() + '\')'
             # if s != '':
@@ -80,8 +141,12 @@ def add_to_db(sheet, rows, cols):
             full_query = query + values
             if is_available(str(record[0])):
                 print("{0} is available".format(str(record[0])))
+                # Adds payment records for existing employer
+                add_payment_record(record)
             else:
                 cursor.execute(full_query)
+                # Adds payment records for non-existing employer
+                add_payment_record(record)
             record = []
             x += 1
 
